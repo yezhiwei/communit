@@ -18,7 +18,7 @@ public class HotTagCache {
             h.setName(name);
             h.setPriority(priority);
             if (pri.size()<max){
-                pri.add(h)
+                pri.add(h);
             }else{
                 HotTagDto minHot=pri.peek();
                 if (h.compareTo(minHot)>0){

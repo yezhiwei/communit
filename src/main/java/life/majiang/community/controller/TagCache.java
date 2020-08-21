@@ -38,9 +38,8 @@ public class TagCache {
     public static  String filterInvalud1(String tags){
         String[] split=StringUtils.split(tags,",");
         List<TagDTO> tagDTOs=get();
-        List<String> taglist=tagDTOs.stream().flatMap(tag->tag.getTags().stream().collect(Collectors.toList()));
-        String invalid=Arrays.stream(split).filter(t-> org.apache.commons.lang3.StringUtils.isBlank())
-        return invalid;
+
+        return null;
     }
 
 

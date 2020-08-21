@@ -744,7 +744,7 @@ public class QuestionExample {
         }
         public Criteria andIdEqualTo(Long value) {
             addCriterion("ID =", value, "id");
-            return (Criteria) this;
+            return null;}
 
         public Criteria andTagNotIn(List<String> values) {
             addCriterion("TAG not in", values, "tag");
